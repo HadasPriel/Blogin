@@ -10,7 +10,8 @@ function toggleMenu() {
     elMenu.classList.toggle('open-menu')
     let elScreen = document.querySelector('.screen')
     elScreen.classList.toggle('dark')
-
+    let elLink = document.querySelector('.a-nav')
+    elLink.classList.toggle('for-click')
 
     let elHamburger = document.querySelector('.hamburger')
     if (elHamburger.innerText === '☰') elHamburger.innerText = 'X'

@@ -89,12 +89,13 @@ logo::first-letter {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s;
 }
 
 .dark {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.335);
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.493);
+    cursor: pointer;
 }
 
 
@@ -148,6 +149,9 @@ logo::first-letter {
     display: flex;
     align-items: flex-end;
     max-height: 100vh;
+    /* z-index: -2; */
+    right: 50%;
+    transform: translate(50%)
 }
 
 
@@ -165,6 +169,7 @@ logo::first-letter {
 .main-card img {
     object-fit: cover;
     margin-bottom: 50px;
+    z-index: -6;
 }
 
 .card-col {
@@ -385,7 +390,7 @@ logo::first-letter {
 
 @media (min-width: 1000px) {
     .main-container {
-        max-width: 800px;
+        max-width: 1300px;
     }
     .main-card img {
         width: 50%;
